@@ -6,7 +6,7 @@ class fore:
 		self.r = str(r)
 		self.g = str(g)
 		self.b = str(b)
-		sys.stdout.write ("\x1b[38;2;"+str(b)+";"+str(g)+";"+str(r)+"m"+text)
+		sys.stdout.write ("\x1b[38;2;"+str(r)+";"+str(g)+";"+str(b)+"m"+text)
 
 class back:
 	def __init__(self, r, g, b,text):
@@ -14,7 +14,7 @@ class back:
 		self.r = str(r)
 		self.g = str(g)
 		self.b = str(b)
-		sys.stdout.write ("\x1b[48;2;"+str(b)+";"+str(g)+";"+str(r)+"m"+text)
+		sys.stdout.write ("\x1b[48;2;"+str(r)+";"+str(g)+";"+str(b)+"m"+text)
 
 class cls:
 	try: os.system("cls")
